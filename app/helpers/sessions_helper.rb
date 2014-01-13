@@ -29,7 +29,7 @@ module SessionsHelper
         store_location
         redirect_to signin_url, notice: "Please sign in."
       end
-    end
+    end 
 
   	def sign_out
       current_user.update_attribute(:remember_token,
